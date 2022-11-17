@@ -1,0 +1,85 @@
+﻿<Window x:Class="Dateien_Umbenennen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dateien_Umbenennen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border 
+        Background="#272537"
+        CornerRadius="20">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="File Manager"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Foreground="White"
+                       FontSize="22" FontWeight="Bold"
+                       Margin="30,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Home"
+                                     Height="60"
+                                     Foreground="White"
+                                     FontSize="14"
+                                     Style="{StaticResource MenuButtonTheme}"/>
+
+                <RadioButton Content="Dateien Umbenennen"
+                                     Height="60"
+                                     Foreground="White"
+                                     FontSize="14"
+                                     Style="{StaticResource MenuButtonTheme}"/>
+
+
+                <RadioButton Content="Dateien verschieben"
+                                     Height="60"
+                                     Foreground="White"
+                                     FontSize="14"
+                                     Style="{StaticResource MenuButtonTheme}"/>
+
+                <RadioButton Content="Dateien erstellen"
+                                     Height="60"
+                                     Foreground="White"
+                                     FontSize="14"
+                                     Style="{StaticResource MenuButtonTheme}"/>
+
+                <RadioButton Content="Dateien löschen"
+                                     Height="60"
+                                     Foreground="White"
+                                     FontSize="14"
+                                     Style="{StaticResource MenuButtonTheme}"/>
+
+
+            </StackPanel>
+
+            <TextBox Text="Open File"
+                     Width="250"
+                     Height="40"
+                     VerticalAlignment="Stretch"
+                     Margin="5"
+                     Grid.Column="1" 
+                     Style="{StaticResource Textbox}"/>
+
+
+        </Grid>
+
+    </Border>
+
+
+</Window>
