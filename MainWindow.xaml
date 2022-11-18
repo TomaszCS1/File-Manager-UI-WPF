@@ -68,14 +68,16 @@
 
             </StackPanel>
 
-            <TextBox Text="Open File"
-                     Width="250"
+            <TextBox
                      Height="40"
-                     VerticalAlignment="Stretch"
-                     Margin="5"
+                     Margin="40,18,390,17"
                      Grid.Column="1" 
-                     Style="{StaticResource Textbox}"/>
+                     Style="{StaticResource ModernTextbox}"/>
 
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"/>
+            
 
         </Grid>
 
