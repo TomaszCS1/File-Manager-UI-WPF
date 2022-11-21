@@ -33,9 +33,7 @@ namespace Dateien_Umbenennen.MVVM.ViewModel
             DiscoveryVm = new DiscoveryViewModel();
             CurrentView = HomeVm;
 
-            HomeViewCommand = new RelayCommand(eingabeparameter => {
-                CurrentView = HomeVm;
-            });
+            HomeViewCommand = new RelayCommand(eingabeparameter => { CurrentView = HomeVm;}); //33:44
 
 
             DiscoveryViewCommand = new RelayCommand(o =>
