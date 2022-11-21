@@ -3,20 +3,29 @@ using System.Collections.Generic;
 using System.Text;
 using Dateien_Umbenennen.Core;
 
+
 namespace Dateien_Umbenennen.MVVM.ViewModel
 {
     class MainViewModel : ObservableObject
     {
-        private object myVar;
 
-        public object MyProperty        //30:49
+        public HomeViewModel HomeVm { get; set; }
+
+        private object _currentView;
+
+        public object CurrentView
         {
-            get { return myVar; }
-            set { myVar = value; }
+            get { return _currentView; }
+            set 
+            {_currentView = value;
+             OnPropertyChanged();
+            }
         }
 
         public MainViewModel()
         {
+            HomeVm = new HomeViewModel();
+            CurrentView = HomeVm;
 
         }
     }

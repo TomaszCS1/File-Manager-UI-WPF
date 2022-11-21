@@ -90,7 +90,8 @@
                 <Border Width="150"
                         Height="150"
                         Background="#844eff"
-                        CornerRadius="10"/>
+                        CornerRadius="10"
+                        Margin="0,0"/>
                 <Border Width="150"
                         Height="150"
                         Background="#4e99ff"
