@@ -43,13 +43,17 @@
                                      Height="60"
                                      Foreground="White"
                                      FontSize="14"
-                                     Style="{StaticResource MenuButtonTheme}"/>
+                                     Style="{StaticResource MenuButtonTheme}"
+                                     IsChecked="True"
+                                     Command="{Binding HomeViewCommand}"/>
 
                 <RadioButton Content="Dateien Umbenennen"
+                                     x:Name="rbDateiUmbenn"
                                      Height="60"
                                      Foreground="White"
                                      FontSize="14"
-                                     Style="{StaticResource MenuButtonTheme}"/>
+                                     Style="{StaticResource MenuButtonTheme}"
+                                     Command="{Binding DiscoveryViewCommand}"/>
 
 
                 <RadioButton Content="Dateien verschieben"

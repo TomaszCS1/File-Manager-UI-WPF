@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using Dateien_Umbenennen.Core;
-using GalaSoft.MvvmLight.Command;
 using System.Linq.Expressions;
+using GalaSoft.MvvmLight.CommandWpf;
 
 namespace Dateien_Umbenennen.MVVM.ViewModel
 {
@@ -33,15 +33,8 @@ namespace Dateien_Umbenennen.MVVM.ViewModel
             DiscoveryVm = new DiscoveryViewModel();
             CurrentView = HomeVm;
 
-            HomeViewCommand = new RelayCommand(eingabeparameter => { CurrentView = HomeVm;}); //33:44
-
-
-            DiscoveryViewCommand = new RelayCommand(o =>
-            {
-                CurrentView = DiscoveryVm;
-            });
-
-
+            HomeViewCommand = new RelayCommand(o => CurrentView = HomeVm;) //33:44
+            
         }
     }
 }

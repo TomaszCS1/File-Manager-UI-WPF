@@ -19,7 +19,7 @@
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:DiscoveryViewModel}">
-                <view:HomeView/>
+                <view:DiscoveryView/>
             </DataTemplate>
 
         </ResourceDictionary> 
